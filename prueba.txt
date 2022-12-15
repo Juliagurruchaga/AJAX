@@ -1,1 +1,1 @@
-palabras, sepaarades, con comas
+varias,palabras, separadas,con comas
