@@ -7,6 +7,7 @@
 <body>
 	<ul></ul>
 	<script>
+		const lista = document.querySelector("ul");
 	//1) Crear una conexión → objeto XHR
 	const conexion = new XMLHttpRequest();
 	//2) Configurar la conexión → URL, método
@@ -15,7 +16,7 @@
 	conexion.send();
 	//4) Esperar la respuesta y gestionarla
 	conexion.addEventListener("load", function(){    //conexion va a escuchar load y cuando eso pase hará la funcion que hemos puesto
-		conexion.responseText.split(",").forEach(palabra =>{
+		conexion.responseText.split(",").forEach( palabra => {
 			let li = document.createElement("li");
 			li.innerHTML = palabra;
 			lista.appendChild(li);
