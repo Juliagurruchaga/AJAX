@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	//1) Crear una conexión → objeto XHR
+	const conexion = new XMLHttpRequest();
+	//2) Configurar la conexión → URL, método
+	conexion.open("GET","prueba.txt");
+	//3) Enviar la petición
+	conexion.send();
+	//4) Esperar la respuesta y gestionarla
+	conexion.addEventListener("load", function(){    //conexion va a escuchar load y cuando eso pase hará la funcion que hemos puesto
+		console.log(conexion.responseText);
+	});
+
+	
+	</script>
+</body>
+</html>
